@@ -1,0 +1,58 @@
+* {
+  font-family: 'Open Sans','Montserrat', Georgia, Times, 'Times New Roman', sans-serif;
+  /* background-color: white; */
+  /* border: 1px solid purple; */
+}
+
+
+body {
+  margin: 0;
+}
+
+main {
+ margin-left: 20%;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #353535;
+  width: 20%;
+  height: 100%;
+}
+
+.logo{
+  width: 50%;
+  border-radius: 50%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  text-decoration: none;
+  margin: 16px 0;
+}
+
+nav a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: lowercase;
+  font-weight: 600;
+  padding: 4px 8px;
+  transition: .1s;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #000;  
+
+}
+
