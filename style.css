@@ -3,6 +3,9 @@
   /* border: purple solid 1px; */
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
