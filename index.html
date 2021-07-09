@@ -2,91 +2,33 @@
 <head>
   <title>Jodie Eagleson | Front End Developer</title>
   <meta charset="UTF-8" />
-  <meta name="description" content="Jodie Eagleson's Web Dev Portfolio" />
+  <meta name="description" content="Portfolio of Jodie Eagleson" />
   <meta name="author" content="Jodie Eagleson" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="keywords"
     content="HTML, CSS, Portfolio, Web Developer, Web Design, Front End, Resume, Game Jam, Peterborough, Ontario, Jodie, Eagleson, Website, Web Dev"
   />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Source+Sans+Pro&display=swap"
+    rel="stylesheet"
+  />
+  <script src="script.js"></script> 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <nav>
-      <a href="#main"><img src="images/jodiebw.jpg" class="logo" alt="Black and white portrait" /></a>
-        <ul>
-        <a href="#about" class="list"><li>About</li></a>
-        <a href="#experience" class="list"><li>Experience</li></a>
-        <a href="#volunteer" class="list"><li>Volunteer</li></a>
-        <a href="#projects" class="list"><li>Projects</li></a>
-        <a href="#skills" class="list"><li>Skills</li></a>
-      </ul>
-  </nav>
+  <nav include-html="/content/nav.html"></nav>
   <main id="main">
-    <div id="intro">
-      <h1>JODIE EAGLESON</h1>
-      <h2>Front End Web Developer</h2>
-      <p>Peterborough, ON<br>
-      jodieeagleson@gmail.com</p>
-    </div>
-    <div class="section" id="about">
-      <h2>This is the section about me. </h2>
-      <p>Hello I am Jodie and I like oranges and lemons and limes.<br>
-        Sometimes I like to cut them in half and juice them.<br>
-        The juice goes into a bowl. Sugar is added.<br>
-        Then you mix it allll up and throw in some water. <br> 
-        Maybe some icecubes.<br>
-        Think it tastes real good? <br>
-        Big Sip! <br>
-        YOU'RE WRONG.</p>
-    </div>
-    <div class="section" id="experience">
-      <h2>This is the section that outlines my experience.</h2>
-      <ul>
-        <li>Web Dev Doot</li>
-        <li>Hydro Doot</li>
-        <li>Loblaw Doot</li>
-        <li>Wipro Doot</li>
-      </ul>
-    </div>
-    <div class="section" id="volunteer">
-      <h2>This is the section that outlines volunteering I've done.</h2>
-      <ul>
-        <li>Ladies Learning Code - Mentor</li>
-        <li>University of Guelph Mature Students' Association - President</li>
-        <li>Univerity of Guelph - Peer Helper and Notetaker</li>
-      </ul>
-    </div>
-    <div class="section" id="projects">
-      
-      <h2>This is the section that outlines projects I've worked on.</h2>
-      <ul>
-        <li>Family Scrapbook</li>
-        <li>Pretty Cool Camping List</li>
-        <li>Game Jam - Quantum Thief</li>
-        <li>Game Jam - Alternative Axe</li>
-      </ul>
-    </div>
-    <div class="section" id="skills">
-      
-      <h2>This is a list of skills I have.</h2>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS</li>
-        <li>Web Design</li>
-        <li>Bein cool</li>
-        <li>Workin hard</li>
-        <li>Layin down</li>
-        <li>Sleepin and dreamin</li>
-      </ul>
-    </div>
-    </div>
-    
+    <div id="intro" include-html="/content/intro.html"></div>
+    <div class="section" id="about" include-html="/content/about.html"></div>
+    <div class="section" id="experience" include-html="/content/experience.html"></div>
+    <div class="section" id="volunteer" include-html="/content/volunteer.html"></div>
+    <div class="section" id="projects" include-html="/content/projects.html"></div>
+    <div class="section" id="skills" include-html="/content/skills.html"></div>
+
+    <script>includeHTML();</script>
   </main>
 </body>
-
-<footer>This is a test footer</footer>
