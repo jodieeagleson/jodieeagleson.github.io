@@ -22,7 +22,7 @@ main {
 
 h1 {
   font-size: 5em;
-  transition: 1.5s;
+  transition: .2s;
 }
 
 h1:hover {
@@ -31,7 +31,7 @@ h1:hover {
 
 h2 {
   font-size: 3em;
-  transition: 1.5s;
+  transition: .2s;
 }
 
 h2:hover {
@@ -50,27 +50,27 @@ h3 {
   margin: 2rem 4rem;
 }
 
-.sub-header {
+.list-header {
   list-style-type: none;
   font-weight: 700;
-  transition: 1.5s;
+  transition: .5s;
 }
 
-.sub-header:hover {
+.list-header:hover {
   color: #963f20;
 }
 
 #intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   margin-left: 2%;
-  height: 100vh;
+
 }
 
 
 .section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   height: 100vh;
   margin-left: 5%;
 }
@@ -90,16 +90,18 @@ nav {
 .logo {
   width: 40%;
   border-radius: 50%;
-  border: 8px solid #868686;
+  border: 8px solid #fff;
   margin-bottom: 24px;
   margin-left: 30%;
   transition: .4s;
 }
 
 .logo:hover {
-  border: 8px solid #fff;
+  border: 8px solid #cd853f; 
   margin-bottom: 24px;
+  filter: brightness(135%)
 }
+
 
 ul {
   display: flex;
@@ -123,4 +125,21 @@ a.list:hover {
   color: #000;  
   font-weight: 500;
   border-radius: 5%;
+}
+
+ul.list-nested {
+  margin-bottom: 25px;
+}
+
+.hyperlink {
+  color: #9c5712;
+  text-decoration: none;
+}
+
+.hyperlink-header {
+  font-weight: 700;
+}
+
+.hyperlink:hover {
+  color: #f38618;
 }
