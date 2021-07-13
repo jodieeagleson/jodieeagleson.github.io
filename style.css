@@ -1,5 +1,7 @@
+/* ////////////////// BEGIN DESKTOP STYLE /////////////////////  */
+
 * {
-  font-family: 'Roboto', 'Open Sans', 'Source Sans Pro', sans-serif;
+  font-family: "Roboto", "Open Sans", "Source Sans Pro", sans-serif;
   /* border: purple solid 1px; */
 }
 
@@ -12,33 +14,34 @@ body {
 }
 
 main {
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: flex-start;
- margin-left: 20%;
- flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 20%;
+  flex-wrap: wrap;
 }
 
 h1 {
   font-size: 5em;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 h1:hover {
-  color:#daa520;
+  color: #daa520;
 }
 
 h2 {
   font-size: 3em;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 h2:hover {
   color: #cd853f;
 }
 
-h1, h2 {
+h1,
+h2 {
   margin: 0;
 }
 
@@ -53,7 +56,7 @@ h3 {
 .list-header {
   list-style-type: none;
   font-weight: 700;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .list-header:hover {
@@ -62,9 +65,7 @@ h3 {
 
 #intro {
   margin-left: 2%;
-
 }
-
 
 .section {
   display: flex;
@@ -89,19 +90,19 @@ nav {
 
 .logo {
   width: 40%;
+  min-width: 80px;
   border-radius: 50%;
   border: 8px solid #fff;
   margin-bottom: 24px;
   margin-left: 30%;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .logo:hover {
-  border: 8px solid #cd853f; 
+  border: 8px solid #cd853f;
   margin-bottom: 24px;
-  filter: brightness(135%)
+  filter: brightness(135%);
 }
-
 
 ul {
   display: flex;
@@ -111,18 +112,18 @@ ul {
   margin: 0;
 }
 
-a.list{
+a.list {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
   font-weight: 300;
   padding: 8px 20px;
-  transition: .15s;
+  transition: 0.15s;
 }
 
 a.list:hover {
   background-color: #fff;
-  color: #000;  
+  color: #000;
   font-weight: 500;
   border-radius: 5%;
 }
@@ -143,3 +144,91 @@ ul.list-nested {
 .hyperlink:hover {
   color: #f38618;
 }
+
+/* ////////////////// END DESKTOP STYLE /////////////////////  */
+
+/* ////////////////// BEGIN MOBILE STYLE ///////////////////// */
+
+@media screen and (max-width: 750px) {
+
+  * {
+    border: 1px solid purple;
+  }
+
+
+  main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    overflow-wrap: normal;
+  }
+
+  h1 {
+    font-size: 3em;
+    color: #9e7716;
+  }
+
+  h2 {
+    font-size: 2em;
+    color: #704112;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    /* overflow: hidden; */
+    align-items: flex-start;
+    color: #fff;
+    background-color: #353535;
+    margin: 0;
+    height: 10%;
+    width: 100vh;
+  }
+
+  .list {
+    visibility: collapse;
+    border: 1px solid red;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin: 0;
+    margin-left: 5%;
+  }
+  
+  #intro {
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin-left: 5%;
+  }
+
+  .content-text {
+    margin: 2em;
+  }
+
+  .logo {
+    visibility: hidden;
+  }
+
+  .main {
+    margin-top: 20%;
+  }
+
+  .primary-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow:hidden;
+  }
+
+}
+
+/* ////////////////// END MOBILE STYLE /////////////////////  */

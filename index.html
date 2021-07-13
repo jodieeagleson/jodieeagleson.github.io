@@ -15,20 +15,39 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Source+Sans+Pro&display=swap"
     rel="stylesheet"
   />
-  <script src="script.js"></script> 
+  <script src="script.js"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <nav include-html="/content/nav.html"></nav>
   <main id="main">
-    <div class="section" id="intro" include-html="/content/intro.html"></div>
-    <div class="section" id="about" include-html="/content/about.html"></div>
-    <div class="section" id="experience" include-html="/content/experience.html"></div>
-    <div class="section" id="volunteer" include-html="/content/volunteer.html"></div>
-    <div class="section" id="projects" include-html="/content/projects.html"></div>
-    <div class="section" id="skills" include-html="/content/skills.html"></div>
-
-    <script>includeHTML();</script>
+      <div class="section" id="intro" include-html="/content/intro.html"></div>
+      <div class="primary-content">
+      <div class="section" id="about" include-html="/content/about.html"></div>
+      <div
+        class="section"
+        id="experience"
+        include-html="/content/experience.html"
+      ></div>
+      <div
+        class="section"
+        id="volunteer"
+        include-html="/content/volunteer.html"
+      ></div>
+      <div
+        class="section"
+        id="projects"
+        include-html="/content/projects.html"
+      ></div>
+      <div
+        class="section"
+        id="skills"
+        include-html="/content/skills.html"
+      ></div>
+    </div>
+    <script>
+      includeHTML();
+    </script>
   </main>
 </body>
