@@ -173,10 +173,11 @@ input[type="checkbox"] {
   display: none;
 }
 
+.checkbox-cover {
+  display: none;
+}
 
 /* ////////////////// END DESKTOP STYLE /////////////////////  */
-
-
 
 /* ////////////////// BEGIN DARK/LIGHT MODE STYLE /////////// */
 
@@ -204,5 +205,3 @@ input[type="checkbox"] {
 }
 
 /* ////////////////// END DARK/LIGHT MODE STYLE /////////// */
-
-
