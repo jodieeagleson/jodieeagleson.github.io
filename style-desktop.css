@@ -68,7 +68,7 @@ h3 {
 }
 
 .list-header:hover {
-  color: #963f20;
+  color: #305ba6;
 }
 
 .list-no-type {
@@ -169,7 +169,15 @@ input[type="checkbox"] {
   display: none;
 }
 
-.checkbox-cover {
+.nav-icon-open {
+  display: none;
+}
+
+#nav-icon-close {
+  display: none;
+}
+
+.mobile-name-nav {
   display: none;
 }
 

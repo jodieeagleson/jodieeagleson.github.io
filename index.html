@@ -21,13 +21,22 @@
 </head>
 
 <body>
-  <input type="checkbox" alt="Menu Button"></input>
-  <div id="checkbox-cover" alt="Hamburger menu icon">
-    <div class="hamburger-layer"></div>
-    <div class="hamburger-layer"></div>
-    <div class="hamburger-layer"></div>
+  <input type="checkbox" alt="Menu Button" class="nav-icon" />
+  <div id="nav-header">
+    <div
+      id="nav-icon-open"
+      class="nav-icon"
+      alt="Hamburger menu icon to open nav"
+    >
+      <div class="hamburger-layer"></div>
+      <div class="hamburger-layer"></div>
+      <div class="hamburger-layer"></div>
+    </div>
+    <div id="nav-icon-close" class="nav-icon" alt="X symbol used to close nav">
+      &#x2716;
+    </div>
+    <div class="mobile-name-nav"><a href="#intro" class="hyperlink" onclick="toggleMenu()"> Jodie Eagleson </a></div>
   </div>
-  
   <nav include-html="/content/nav.html"></nav>
   <main>
     <div class="section" id="intro" include-html="/content/intro.html"></div>
@@ -48,7 +57,6 @@
       include-html="/content/volunteer.html"
     ></div>
     <div class="section" id="skills" include-html="/content/skills.html"></div>
-
   </main>
 </body>
 
