@@ -71,10 +71,6 @@ h3 {
   color: #963f20;
 }
 
-.list-header:nth-child(odd):hover {
-  color: #305ba6;
-}
-
 .list-no-type {
   list-style-type: none;
 }
